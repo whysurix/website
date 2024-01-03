@@ -10,6 +10,7 @@ header{
   background: #000;
   display: flex;
   justify-content: center;
+  position: fixed;
 }
 
 
@@ -315,6 +316,10 @@ backdrop-filter: blur(40px);
 margin-top: 32px;
 }
 
+.first_btn:hover{
+  background: rgb(102, 102, 230);
+}
+
 .second_btn{
 position: absolute;
 margin-top: 196px;
@@ -357,4 +362,13 @@ footer p{
   letter-spacing: -0.5px;
   padding: 15px;
   margin-left: 65px;
+}
+
+
+.works a:hover{
+  color: rgb(102, 102, 230);
+}
+
+.nav__item:hover{
+  color: rgb(102, 102, 230);
 }
