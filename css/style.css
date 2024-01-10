@@ -10,7 +10,6 @@ header{
   background: #000;
   display: flex;
   justify-content: center;
-  position: fixed;
 }
 
 
@@ -61,7 +60,7 @@ main{
   font-size: 55px;
   font-style: normal;
   font-weight: 700;
-  line-height: 70px; /* 127.273% */
+  line-height: 70px;
   letter-spacing: -0.5px;
   margin-right: 383px;
   margin-top: 56px;
@@ -85,7 +84,7 @@ main{
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
-  line-height: 70px; /* 175% */
+  line-height: 70px;
   letter-spacing: -0.5px;
 }
 .arrow{
@@ -112,6 +111,13 @@ main{
   width: 355px;
   height: 517px;
   border-radius: 10px;
+  border: 3px solid;
+  animation-name: light;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
 }
 .first {
   border-bottom: 2px solid white;
@@ -164,7 +170,7 @@ font-family: 'Manrope', sans-serif;
 font-size: 24px;
 font-style: normal;
 font-weight: 600;
-line-height: 38px; /* 158.333% */
+line-height: 38px;
 letter-spacing: -0.5px;
 }
 
@@ -174,7 +180,7 @@ font-family: 'Roboto', sans-serif;
 font-size: 12px;
 font-style: normal;
 font-weight: 700;
-line-height: 160%; /* 19.2px */
+line-height: 160%;
 }
 
 ::placeholder{
@@ -183,7 +189,7 @@ font-family: 'Roboto', sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 160%; /* 25.6px */
+line-height: 160%;
 margin-left: 20px;
 opacity: 0.3;
 }
@@ -257,7 +263,7 @@ font-family: 'Roboto', sans-serif;
 font-size: 12px;
 font-style: normal;
 font-weight: 700;
-line-height: 160%; /* 19.2px */
+line-height: 160%;
 }
 
 .select select {
@@ -358,7 +364,7 @@ footer p{
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 36px; /* 225% */
+  line-height: 36px;
   letter-spacing: -0.5px;
   padding: 15px;
   margin-left: 65px;
@@ -371,4 +377,22 @@ footer p{
 
 .nav__item:hover{
   color: rgb(102, 102, 230);
+}
+
+@keyframes light{
+  0%{
+    border-color: rgb(212, 0, 212);
+  }
+  25%{
+    border-color: red;
+  }
+  50%{
+    border-color: greenyellow;
+  }
+  75%{
+    border-color: #00eeff;
+  }
+  100%{
+    border-color: rgb(208, 255, 0);
+  }
 }
